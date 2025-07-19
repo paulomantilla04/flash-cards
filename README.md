@@ -1,69 +1,28 @@
-# React + TypeScript + Vite
+# Flash Cards 🎴
+## Goal 🎯
+The goal of this project was to help me learn about how to use state management and component-based architecture using React. I've built a flash card app with pre-defined questions and answers that users can flip through to test their knowledge.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="550" height="633" alt="image" src="https://github.com/user-attachments/assets/e069630e-81cf-43b1-9f34-88bb4656f3f8" />
+<img width="562" height="621" alt="image" src="https://github.com/user-attachments/assets/3c8a169f-3454-4a3c-918d-adc6bcca94a5" />
 
-Currently, two official plugins are available:
+## Requirements 📝
+It was developed a flash cards app with the following features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Pre-defined flashcards with questions and answers
+- Progress bar to show the user’s progress
+- Ability to view flashcards one at a time and flip to reveal the answer
+- Simple navigation to cycle through the flashcards
 
-## Expanding the ESLint configuration
+## URL Project
+If you are interested in solving this challenge too, you can visit the [URL Project](https://roadmap.sh/projects/flash-cards)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Installation
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Clone the repository:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/paulomantilla04/flash-cards.git
+cd flash-cards
+bun install
+bun dev
 ```
